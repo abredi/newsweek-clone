@@ -1,0 +1,10 @@
+{
+  "name": "newsweek-clone",
+  "version": "0.0.1",
+  "description": "The newsweek website replica",
+  "main": "index.html",
+  "repository": "https://github.com/abredi/newsweek-clone.git",
+  "author": "Abdulaziz Ali <rediabdulaziz@gmail.com>",
+  "license": "MIT",
+  "private": null
+}

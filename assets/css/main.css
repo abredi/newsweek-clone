@@ -8,6 +8,7 @@ button,
 ul {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 :root {
@@ -97,6 +98,10 @@ a:hover {
   text-decoration: solid var(--newsweek-red) underline;
 }
 
+.text-newsweek {
+  color: var(--newsweek-red);
+}
+
 .nav-link,
 .debate .card-body a {
   color: #000 !important;
@@ -180,6 +185,10 @@ a:hover {
   font-size: 10pt;
 }
 
+.font-sz-2 {
+  font-size: 12pt;
+}
+
 .news-list h3,
 .debate h3,
 .news-sections h3 {
@@ -227,6 +236,11 @@ a:hover {
   width: 29px;
   height: 28px;
   background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+}
+
+.subscribe img {
+  height: 14em;
+  max-width: 11em;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
