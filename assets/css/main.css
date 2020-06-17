@@ -255,6 +255,10 @@ body a {
   max-width: 11em;
 }
 
+.newletter img {
+  max-width: 11em;
+}
+
 .footer li {
   list-style: none;
   padding: 0 0.5em;
@@ -281,8 +285,8 @@ body a {
   line-height: 21px;
 }
 
-.n-link {
-
+.card-img {
+  background-color: #000;
 }
 
 /* footer */
