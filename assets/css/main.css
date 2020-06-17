@@ -98,8 +98,15 @@ body a {
   font-size: 0.9em;
 }
 
-a:hover {
-  text-decoration: solid var(--newsweek-red) underline;
+.underline a:hover
+ {
+    color: currentColor;
+    text-decoration: underline var(--newsweek-red);
+}
+
+.no-underline a:hover {
+  color: currentColor;
+  text-decoration: none;
 }
 
 .text-newsweek {
@@ -119,7 +126,9 @@ a:hover {
 }
 
 .navbar .nav-link:hover,
-.card-body a:hover {
+.debate .card-body a:hover,
+.list .card-body a:hover
+ {
   color: var(--newsweek-red) !important;
 }
 
@@ -272,7 +281,9 @@ a:hover {
   line-height: 21px;
 }
 
+.n-link {
 
+}
 
 /* footer */
 
