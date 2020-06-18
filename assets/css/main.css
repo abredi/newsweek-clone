@@ -80,7 +80,7 @@ body a {
 }
 
 .card-subheader {
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 0.8em 0 0;
   color: var(--gray);
   text-transform: uppercase;
@@ -167,8 +167,8 @@ body a {
 
 .list img {
   width: 100%;
-  max-width: 65px;
-  max-height: 65px;
+  max-width: 63px;
+  max-height: 63px;
 }
 
 .vs-container::before {
@@ -199,6 +199,10 @@ body a {
 
 .font-sz-2 {
   font-size: 12pt;
+}
+
+.font-sz-4 {
+  font: 18/30;
 }
 
 .news-list h3,
@@ -289,7 +293,11 @@ body a {
   background-color: #000;
 }
 
-/* footer */
+.debate a,
+.debate p {
+  font-size: 17px;
+  line-height: 22px;
+}
 
 .footer,
 .footer a {
@@ -300,6 +308,18 @@ body a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.btn-subs {
+  background-color: #ffe400;
+}
+
+.top-date {
+font: 16px/34px;
+}
+
+.navbar-nav .nav-link,
+.nav-a {
+  font: 19/24;
+}
 
   @media (min-width: 768px) and (max-width:992px) {
 
@@ -320,7 +340,7 @@ body a {
     }
 
     .nav .brand svg {
-      width: 40%;
+      max-width: 396px;
     }
 
     .col-base {
@@ -341,6 +361,16 @@ body a {
   }
 
   @media (min-width:992px) {
+
+    .container {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .container {
+      max-width: 1310px;
+    }
+
     .col-base {
       max-width: 29.33%;
     }
