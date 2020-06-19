@@ -54,8 +54,9 @@ body a {
 
 .bg-descent,
 .badge-img-fixed {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   color: var(--newsweek-red);
+  font-weight: 900;
 }
 
 .bg-newsweek {
@@ -95,7 +96,7 @@ body a {
 }
 
 .card-text {
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 .underline a:hover
@@ -193,16 +194,38 @@ body a {
   font-size: 10pt;
 }
 
+.font-small {
+  font-size: 12px;
+  line-height: 12px;
+}
+
 .font-sz-1 {
   font-size: 10pt;
 }
 
 .font-sz-2 {
-  font-size: 12pt;
+  font-size: 17px !important;
+  line-height: 20px !important;
+}
+
+.font-sz-3 {
+  font-size: 16pt;
+  line-height: 21px;
 }
 
 .font-sz-4 {
-  font: 18/30;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.font-sz-5 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.author-name {
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .news-list h3,
@@ -215,18 +238,22 @@ body a {
   height: 100%;
   width: 100%;
   max-height: 95px;
+  max-width: 95px;
   align-self: flex-start;
 }
 
 .opinions .card,
-.news-list .card,
-.section-header {
+.news-list .card {
   border-top: 1px solid #eee;
   border-radius: 0;
 }
 
 .megazine-header {
   border-bottom: 1px solid #eee;
+}
+
+.border-1 {
+  border: 2px solid #eee;
 }
 
 .opinions .card:nth-child(2) {
@@ -243,9 +270,9 @@ body a {
   min-height: 5.8em;
 }
 
-.tiny-cards .card-title {
-  font: bold 9pt "Roboto Condensed", Arial, Helvetica, sans-serif;
-  color: var(--gray-dark);
+.tiny-cards .card-title a {
+  font: bold 16px/19px "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: rgba(3, 3, 3, 0.5);
 }
 
 .icon-nw {
@@ -254,19 +281,44 @@ body a {
   background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
 }
 
+.subscribe {
+  background-color: rgb(244, 245, 246);
+}
+
+.subscribe,
+.newletter {
+  height: 20.8em;
+}
+
+.subscribe p,
+.newletter p {
+  font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
 .subscribe img {
   height: 14em;
   max-width: 11em;
 }
 
-.newletter img {
-  max-width: 11em;
+.newsletter-img {
+  background: #000 url(https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5) no-repeat center center / cover;
 }
 
 .footer li {
   list-style: none;
-  padding: 0 0.5em;
+  
   color: #888;
+  margin-top: 0.7em;
+}
+
+.countries li {
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+
+.footer-links-menu li {
+padding-right: 1em;
 }
 
 .genericon {
@@ -283,29 +335,24 @@ body a {
   border-right: ridge 1px #eee;
 }
 
-
-.font-sz-3 {
-  font-size: 16pt;
-  line-height: 21px;
-}
-
 .card-img {
   background-color: #000;
 }
 
-.debate a,
-.debate p {
+.debate a {
   font-size: 17px;
   line-height: 22px;
 }
 
 .footer,
+.footer .menu a {
+   font: 100 14px/15px Arial, Helvetica, sans-serif;
+   line-height: 1.2em;
+}
+
+.footer,
 .footer a {
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 1.2em;
   color: #666;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-subs {
@@ -313,12 +360,92 @@ body a {
 }
 
 .top-date {
-font: 16px/34px;
+font-size: 16px;
+line-height: 34px;
 }
 
 .navbar-nav .nav-link,
 .nav-a {
-  font: 19/24;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.font-normal {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.font-big {
+  font-size: 23px;
+  line-height: 24px;
+}
+
+.font-2-big {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.font-title {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.card-text,
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.opinions p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 4px 0 0 0;
+}
+
+.opinions .card-text {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+.sponsored .card-body {
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.heading {
+  font: 900 19px/19px 'Roboto Condensed', sans-serif;
+}
+
+.wrapper {
+  background-color: #fff;
+}
+
+.magazine .cover-img {
+  height: 24.185em;
+  width: 18.125em;
+}
+
+.magazine .col-sm-3 .card {
+  overflow: hidden;
+}
+
+.magazine .card-img-top {
+  height: 18.125em;
+  width: 27.158em;
+}
+
+.side-list .card-img {
+  width: 100%;
+  height: 90%;
+}
+
+.news-sections .side-list > .card {
+  height: calc(90%/3);
 }
 
   @media (min-width: 768px) and (max-width:992px) {
@@ -362,10 +489,10 @@ font: 16px/34px;
 
   @media (min-width:992px) {
 
-    .container {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+    .wrapper {
+      padding-left: 0px;
+      padding-right: 0px;
+    } 
 
     .container {
       max-width: 1310px;
@@ -386,6 +513,16 @@ font: 16px/34px;
       width: 100%;
     }
 
+    .col-12 {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .row {
+      padding: 0;
+    }
+
     .top-date {
       display: none;
     }
@@ -401,9 +538,13 @@ font: 16px/34px;
       height: 3em;
     }
 
-    .footer-social ul {
+    .footer-social {
       justify-content: flex-start !important;
       margin-top: 0.5em;
+    }
+
+    .social li {
+      padding-right: 0.5em;
     }
 
     .footer-brand-container {
@@ -418,4 +559,25 @@ font: 16px/34px;
       margin-top: 0.3em;  
       margin-bottom: 1em !important;
     }
+
+    .leaf {
+      border: none;
+    }
+
+    .countries {
+      flex-wrap: nowrap !important;
+    }
+
+    .menu {
+      justify-content: flex-start !important;
+    }
+
+    .newletter {
+      justify-content: center;
+    }
+
+    .newletter p {
+      text-align: center;
+    }
+
   }
