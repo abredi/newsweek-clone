@@ -3,11 +3,11 @@
 
 > The [newsweek](newsweek.com) magazine website home page replica based on [newsweek.com](https://newsweek.com/)
 # BigScreen View
-![screenshot](/assets/img/screencapture-big.png)
+![screenshot (Desktop)](/assets/docs/screencapture-big.png?cropResize=1440,921 "Desktop")
 # MediumScreen View
-![screenshot](/assets/img/screencapture-medium.png)
-# MediumSmall View
-![screenshot](/assets/img/screencapture-small.png)
+[medium screen screenshot (Tablet)](/assets/docs/screencapture-medium.png)
+# Small View
+[small screen screenshot (Mobile)](/assets/docs/screencapture-small.png)
 
 This web page is developed by HTML5 and CSS with bootstrap framework.
 
