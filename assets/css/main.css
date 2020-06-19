@@ -96,7 +96,24 @@ body a {
 }
 
 .card-text {
-  font-size: 0.85em;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.debate a {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.footer,
+.footer a {
+  color: #666;
+}
+
+.footer,
+.footer .menu a {
+  font: 100 14px/15px Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
 }
 
 .underline a:hover {
@@ -125,6 +142,17 @@ body a {
   border-bottom: 4px solid var(--blue);
 }
 
+.tiny-cards .card-title a {
+  font: bold 16px/19px "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: rgba(3, 3, 3, 0.5);
+}
+
+.navbar-nav .nav-link,
+.nav-a {
+  font-size: 19px;
+  line-height: 24px;
+}
+
 .navbar .nav-link:hover,
 .debate .card-body a:hover,
 .list .card-body a:hover {
@@ -139,7 +167,7 @@ body a {
   background-color: var(--newsweek-red) !important;
 }
 
-.brand>svg {
+.brand > svg {
   height: 60px;
   fill: #fff;
 }
@@ -268,11 +296,6 @@ body a {
   min-height: 5.8em;
 }
 
-.tiny-cards .card-title a {
-  font: bold 16px/19px "Roboto Condensed", Arial, Helvetica, sans-serif;
-  color: rgba(3, 3, 3, 0.5);
-}
-
 .icon-nw {
   width: 29px;
   height: 28px;
@@ -305,7 +328,6 @@ body a {
 
 .footer li {
   list-style: none;
-
   color: #888;
   margin-top: 0.7em;
 }
@@ -337,22 +359,6 @@ body a {
   background-color: #000;
 }
 
-.debate a {
-  font-size: 17px;
-  line-height: 22px;
-}
-
-.footer,
-.footer .menu a {
-  font: 100 14px/15px Arial, Helvetica, sans-serif;
-  line-height: 1.2em;
-}
-
-.footer,
-.footer a {
-  color: #666;
-}
-
 .btn-subs {
   background-color: #ffe400;
 }
@@ -360,12 +366,6 @@ body a {
 .top-date {
   font-size: 16px;
   line-height: 34px;
-}
-
-.navbar-nav .nav-link,
-.nav-a {
-  font-size: 19px;
-  line-height: 24px;
 }
 
 .font-normal {
@@ -386,11 +386,6 @@ body a {
 .font-title {
   font-size: 22px;
   line-height: 24px;
-}
-
-.card-text {
-  font-size: 15px;
-  line-height: 20px;
 }
 
 .card-text,
@@ -442,14 +437,13 @@ body a {
   height: 90%;
 }
 
-.news-sections .side-list>.card {
-  height: calc(90%/3);
+.news-sections .side-list > .card {
+  height: 30%;
 }
 
 .img2nd {
   margin-left: -25%;
   margin-top: 9%;
-
 }
 
 .navbar-nav .nav-item {
@@ -467,8 +461,7 @@ body a {
   margin-top: -0.5em;
 }
 
-@media (min-width: 768px) and (max-width:992px) {
-
+@media (min-width: 768px) and (max-width: 992px) {
   .container {
     max-width: 100%;
   }
@@ -485,6 +478,10 @@ body a {
     justify-content: flex-start;
   }
 
+  .brand svg {
+    width: 80%;
+  }
+
   .nav .brand svg {
     max-width: 396px;
   }
@@ -495,10 +492,6 @@ body a {
 
   .col-content {
     max-width: 61.64%;
-  }
-
-  .brand svg {
-    width: 80%;
   }
 
   .top-date {
@@ -521,11 +514,10 @@ body a {
   }
 }
 
-@media (min-width:992px) {
-
+@media (min-width: 992px) {
   .wrapper {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .container {
@@ -541,8 +533,7 @@ body a {
   }
 }
 
-@media (min-width:0) and (max-width:576px) {
-
+@media (min-width: 0) and (max-width: 576px) {
   .container {
     width: 100%;
   }
@@ -567,7 +558,7 @@ body a {
     justify-content: space-between !important;
   }
 
-  .brand>svg {
+  .brand > svg {
     width: 8em;
     height: 3em;
   }
@@ -628,5 +619,4 @@ body a {
   .xs-top {
     margin-top: -26%;
   }
-
 }
