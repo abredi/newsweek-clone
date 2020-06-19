@@ -452,6 +452,21 @@ line-height: 34px;
   left: 50%;
 }
 
+.navbar-nav .nav-item {
+  border-right: 1px solid #d9d9d9;
+  padding: 0 0.5em;
+  max-height: 20px;
+}
+
+.navbar-nav {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.global-search {
+  margin-top: -0.5em;
+}
+
   @media (min-width: 768px) and (max-width:992px) {
 
     .container {
