@@ -99,10 +99,9 @@ body a {
   font-size: 0.85em;
 }
 
-.underline a:hover
- {
-    color: currentColor;
-    text-decoration: underline var(--newsweek-red);
+.underline a:hover {
+  color: currentColor;
+  text-decoration: underline var(--newsweek-red);
 }
 
 .no-underline a:hover {
@@ -128,8 +127,7 @@ body a {
 
 .navbar .nav-link:hover,
 .debate .card-body a:hover,
-.list .card-body a:hover
- {
+.list .card-body a:hover {
   color: var(--newsweek-red) !important;
 }
 
@@ -307,7 +305,7 @@ body a {
 
 .footer li {
   list-style: none;
-  
+
   color: #888;
   margin-top: 0.7em;
 }
@@ -318,7 +316,7 @@ body a {
 }
 
 .footer-links-menu li {
-padding-right: 1em;
+  padding-right: 1em;
 }
 
 .genericon {
@@ -346,8 +344,8 @@ padding-right: 1em;
 
 .footer,
 .footer .menu a {
-   font: 100 14px/15px Arial, Helvetica, sans-serif;
-   line-height: 1.2em;
+  font: 100 14px/15px Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
 }
 
 .footer,
@@ -360,8 +358,8 @@ padding-right: 1em;
 }
 
 .top-date {
-font-size: 16px;
-line-height: 34px;
+  font-size: 16px;
+  line-height: 34px;
 }
 
 .navbar-nav .nav-link,
@@ -444,12 +442,14 @@ line-height: 34px;
   height: 90%;
 }
 
-.news-sections .side-list > .card {
+.news-sections .side-list>.card {
   height: calc(90%/3);
 }
 
 .img2nd {
-  left: 50%;
+  margin-left: -25%;
+  margin-top: 9%;
+
 }
 
 .navbar-nav .nav-item {
@@ -467,155 +467,166 @@ line-height: 34px;
   margin-top: -0.5em;
 }
 
-  @media (min-width: 768px) and (max-width:992px) {
+@media (min-width: 768px) and (max-width:992px) {
 
-    .container {
-      max-width: 100%;
-    }
-
-    .col-base-sm-12 {
-      max-width: 100% !important;
-    }
-
-    .nav {
-      align-items: center !important;
-    }
-
-    .nav .brand {
-      justify-content: flex-start;
-    }
-
-    .nav .brand svg {
-      max-width: 396px;
-    }
-
-    .col-base {
-      max-width: 38.36%;
-    }
-
-    .col-content {
-      max-width: 61.64%;
-    }
-
-    .brand svg {
-      width: 80%;
-    }
-
-    .top-date {
-      font-size: 14px;
-    }
-
-    .magazine .card-img-top {
-      height: 100%;
-      width: 100%;
-    }
-
-    .magazine .cover-img {
-      height: 140%;
-      width: 100%;
-    }
-
-    .badge-img span,
-    .badge-img-fixed {
-      padding: 0.1em;
-    }
+  .container {
+    max-width: 100%;
   }
 
-  @media (min-width:992px) {
-
-    .wrapper {
-      padding-left: 0px;
-      padding-right: 0px;
-    } 
-
-    .container {
-      max-width: 1310px;
-    }
-
-    .col-base {
-      max-width: 29.33%;
-    }
-
-    .col-content {
-      max-width: 41.34%;
-    }
+  .col-base-sm-12 {
+    max-width: 100% !important;
   }
 
-  @media (min-width:0) and (max-width:576px) {
-
-    .container {
-      width: 100%;
-    }
-
-    .col-12 {
-      width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    .row {
-      padding: 0;
-    }
-
-    .top-date {
-      display: none;
-    }
-
-    .nav {
-      padding-bottom: 0;
-      align-items: center !important;
-      justify-content: space-between !important;
-    }
-
-    .brand>svg {
-      width: 8em;
-      height: 3em;
-    }
-
-    .footer-social {
-      justify-content: flex-start !important;
-      margin-top: 0.5em;
-    }
-
-    .social li {
-      padding-right: 0.5em;
-    }
-
-    .footer-brand-container {
-      display: block;
-    }
-
-    .order-xs-first {
-      order: -1;
-    }
-    .tiny-cards h5 {
-      font-size: 12pt !important;
-      margin-top: 0.3em;  
-      margin-bottom: 1em !important;
-    }
-
-    .leaf {
-      border: none;
-    }
-
-    .countries {
-      flex-wrap: nowrap !important;
-    }
-
-    .menu {
-      justify-content: flex-start !important;
-    }
-
-    .newletter {
-      justify-content: center;
-    }
-
-    .newletter p {
-      text-align: center;
-    }
-
-    .xs-center {
-      justify-content: center !important;
-    }
-
+  .nav {
+    align-items: center !important;
   }
+
+  .nav .brand {
+    justify-content: flex-start;
+  }
+
+  .nav .brand svg {
+    max-width: 396px;
+  }
+
+  .col-base {
+    max-width: 38.36%;
+  }
+
+  .col-content {
+    max-width: 61.64%;
+  }
+
+  .brand svg {
+    width: 80%;
+  }
+
+  .top-date {
+    font-size: 14px;
+  }
+
+  .magazine .card-img-top {
+    height: 100%;
+    width: 100%;
+  }
+
+  .magazine .cover-img {
+    height: 140%;
+    width: 100%;
+  }
+
+  .badge-img span,
+  .badge-img-fixed {
+    padding: 0.1em;
+  }
+}
+
+@media (min-width:992px) {
+
+  .wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .container {
+    max-width: 1310px;
+  }
+
+  .col-base {
+    max-width: 29.33%;
+  }
+
+  .col-content {
+    max-width: 41.34%;
+  }
+}
+
+@media (min-width:0) and (max-width:576px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .col-12 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .row {
+    padding: 0;
+  }
+
+  .top-date {
+    display: none;
+  }
+
+  .nav {
+    padding-bottom: 0;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .brand>svg {
+    width: 8em;
+    height: 3em;
+  }
+
+  .footer-social {
+    justify-content: flex-start !important;
+    margin-top: 0.5em;
+  }
+
+  .social li {
+    padding-right: 0.5em;
+  }
+
+  .footer-brand-container {
+    display: block;
+  }
+
+  .order-xs-first {
+    order: -1;
+  }
+
+  .tiny-cards h5 {
+    font-size: 12pt !important;
+    margin-top: 0.3em;
+    margin-bottom: 1em !important;
+  }
+
+  .leaf {
+    border: none;
+  }
+
+  .countries {
+    flex-wrap: nowrap !important;
+  }
+
+  .menu {
+    justify-content: flex-start !important;
+  }
+
+  .newletter {
+    justify-content: center;
+  }
+
+  .newletter p {
+    text-align: center;
+  }
+
+  .xs-center {
+    text-align: center;
+    justify-content: center !important;
+  }
+
+  .subscribe,
+  .newletter {
+    height: 100%;
+  }
+
+  .xs-top {
+    margin-top: -26%;
+  }
+
+}
