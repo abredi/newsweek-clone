@@ -425,11 +425,6 @@ line-height: 34px;
   background-color: #fff;
 }
 
-.magazine .cover-img {
-  height: 24.185em;
-  width: 18.125em;
-}
-
 .magazine .col-sm-3 .card {
   overflow: hidden;
 }
@@ -439,6 +434,11 @@ line-height: 34px;
   width: 27.158em;
 }
 
+.magazine .cover-img {
+  height: 24.185em;
+  width: 18.125em;
+}
+
 .side-list .card-img {
   width: 100%;
   height: 90%;
@@ -446,6 +446,10 @@ line-height: 34px;
 
 .news-sections .side-list > .card {
   height: calc(90%/3);
+}
+
+.img2nd {
+  left: 50%;
 }
 
   @media (min-width: 768px) and (max-width:992px) {
@@ -484,6 +488,21 @@ line-height: 34px;
 
     .top-date {
       font-size: 14px;
+    }
+
+    .magazine .card-img-top {
+      height: 100%;
+      width: 100%;
+    }
+
+    .magazine .cover-img {
+      height: 140%;
+      width: 100%;
+    }
+
+    .badge-img span,
+    .badge-img-fixed {
+      padding: 0.1em;
     }
   }
 
@@ -578,6 +597,10 @@ line-height: 34px;
 
     .newletter p {
       text-align: center;
+    }
+
+    .xs-center {
+      justify-content: center !important;
     }
 
   }
