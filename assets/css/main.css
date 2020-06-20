@@ -1,0 +1,609 @@
+/* /**
+@author Abdulaziz ALi
+@project Newsweek clone
+*/
+
+body,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body a {
+  color: #000;
+}
+
+:root {
+  --newsweek-red: #f72210;
+  --gray: #6c757d;
+  --blue: #007bff;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+  display: flex;
+}
+
+.bg-descent,
+.badge-img-fixed {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--newsweek-red);
+  font-weight: 900;
+}
+
+.bg-newsweek {
+  background-color: var(--newsweek-red);
+  color: #fff;
+}
+
+.card-img-top {
+  min-height: 10em;
+  background-color: #000;
+}
+
+.badge-img,
+.badge-img-fixed {
+  margin-top: -2em;
+  width: max-content;
+}
+
+.badge-img span,
+.badge-img-fixed {
+  padding: 0.3em;
+}
+
+.card-subheader {
+  font-size: 1em;
+  padding: 0.8em 0 0;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.card {
+  border: none;
+}
+
+.text-gray {
+  color: #555;
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.debate a {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.footer,
+.footer a {
+  color: #666;
+}
+
+.footer,
+.footer .menu a {
+  font: 100 14px/15px Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+}
+
+.underline a:hover {
+  color: currentColor;
+  text-decoration: underline var(--newsweek-red);
+}
+
+.no-underline a:hover {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.text-newsweek {
+  color: var(--newsweek-red);
+}
+
+.nav-link,
+.debate .card-body a {
+  color: #000 !important;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.debate {
+  border-top: 4px solid var(--newsweek-red);
+  border-bottom: 4px solid var(--blue);
+}
+
+.tiny-cards .card-title a {
+  font: bold 16px/19px "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: rgba(3, 3, 3, 0.5);
+}
+
+.navbar-nav .nav-link,
+.nav-a {
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.navbar .nav-link:hover,
+.debate .card-body a:hover,
+.list .card-body a:hover {
+  color: var(--newsweek-red) !important;
+}
+
+.navbar .input-group-prepend {
+  margin-left: 5px;
+}
+
+.nav {
+  background-color: var(--newsweek-red) !important;
+}
+
+.brand > svg {
+  height: 60px;
+  fill: #fff;
+}
+
+.border-bottom-white {
+  border-bottom: 1px solid #e8e5e5;
+}
+
+.rounded-2 {
+  border-radius: 2em;
+}
+
+.flat {
+  border-radius: 0;
+}
+
+.outline-0 {
+  outline: none;
+}
+
+.w-5e {
+  width: 5em !important;
+}
+
+.list img {
+  width: 100%;
+  max-width: 63px;
+  max-height: 63px;
+}
+
+.vs-container::before {
+  content: "";
+  background-color: #d9d9d9;
+  height: 3px;
+  width: calc(50% - 18px);
+}
+
+.vs-container::after {
+  content: "";
+  background-color: #d9d9d9;
+  height: 3px;
+  width: calc(50% - 18px);
+}
+
+.vs {
+  width: 36px;
+  height: 36px;
+  background-color: #000;
+  color: #b5b5b5;
+  font-size: 10pt;
+}
+
+.font-small {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.font-sz-1 {
+  font-size: 10pt;
+}
+
+.font-sz-2 {
+  font-size: 17px !important;
+  line-height: 20px !important;
+}
+
+.font-sz-3 {
+  font-size: 16pt;
+  line-height: 21px;
+}
+
+.font-sz-4 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.font-sz-5 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.author-name {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.news-list h3,
+.debate h3,
+.news-sections h3 {
+  line-height: 11px;
+}
+
+.news-list img {
+  height: 100%;
+  width: 100%;
+  max-height: 95px;
+  max-width: 95px;
+  align-self: flex-start;
+}
+
+.opinions .card,
+.news-list .card {
+  border-top: 1px solid #eee;
+  border-radius: 0;
+}
+
+.megazine-header {
+  border-bottom: 1px solid #eee;
+}
+
+.border-1 {
+  border: 2px solid #eee;
+}
+
+.opinions .card:nth-child(2) {
+  padding-top: 0 !important;
+  border: none;
+}
+
+.sponsored .card-img-top {
+  min-height: 14em;
+}
+
+.tiny-cards .card-img-top {
+  width: 100%;
+  min-height: 5.8em;
+}
+
+.icon-nw {
+  width: 29px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+}
+
+.subscribe {
+  background-color: rgb(244, 245, 246);
+}
+
+.subscribe,
+.newletter {
+  height: 20.8em;
+}
+
+.subscribe p,
+.newletter p {
+  font: 300 15px/21px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.subscribe img {
+  height: 14em;
+  max-width: 11em;
+}
+
+.newsletter-img {
+  background: #000 url(https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5) no-repeat center center / cover;
+}
+
+.footer li {
+  list-style: none;
+  color: #888;
+  margin-top: 0.7em;
+}
+
+.countries li {
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+}
+
+.footer-links-menu li {
+  padding-right: 1em;
+}
+
+.genericon {
+  font-size: 24px;
+}
+
+.footer-brand svg {
+  max-width: 15em;
+  fill: var(--newsweek-red);
+}
+
+.leaf {
+  display: inline;
+  border-right: ridge 1px #eee;
+}
+
+.card-img {
+  background-color: #000;
+}
+
+.btn-subs {
+  background-color: #ffe400;
+}
+
+.top-date {
+  font-size: 16px;
+  line-height: 34px;
+}
+
+.font-normal {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.font-big {
+  font-size: 23px;
+  line-height: 24px;
+}
+
+.font-2-big {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.font-title {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.card-text,
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.opinions p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 4px 0 0 0;
+}
+
+.opinions .card-text {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+.sponsored .card-body {
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.heading {
+  font: 900 19px/19px 'Roboto Condensed', sans-serif;
+}
+
+.wrapper {
+  background-color: #fff;
+}
+
+.magazine .col-sm-3 .card {
+  overflow: hidden;
+}
+
+.magazine .card-img-top {
+  height: 18.125em;
+  width: 27.158em;
+}
+
+.magazine .cover-img {
+  height: 24.185em;
+  width: 18.125em;
+}
+
+.side-list .card-img {
+  width: 100%;
+  height: 90%;
+}
+
+.news-sections .side-list > .card {
+  height: 30%;
+}
+
+.img2nd {
+  margin-left: -25%;
+  margin-top: 9%;
+}
+
+.navbar-nav .nav-item {
+  border-right: 1px solid #d9d9d9;
+  padding: 0 0.5em;
+  max-height: 20px;
+}
+
+.navbar-nav {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.global-search {
+  margin-top: -0.5em;
+}
+
+ul.social li {
+  display: inline;
+  padding: 0 0.5em;
+}
+
+.image {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .col-base-sm-12 {
+    max-width: 100% !important;
+  }
+
+  .nav {
+    align-items: center !important;
+  }
+
+  .nav .brand {
+    justify-content: flex-start;
+  }
+
+  .brand svg {
+    width: 80%;
+  }
+
+  .nav .brand svg {
+    max-width: 396px;
+  }
+
+  .col-base {
+    max-width: 38.36%;
+  }
+
+  .col-content {
+    max-width: 61.64%;
+  }
+
+  .top-date {
+    font-size: 14px;
+  }
+
+  .magazine .card-img-top {
+    height: 100%;
+    width: 100%;
+  }
+
+  .magazine .cover-img {
+    height: 140%;
+    width: 100%;
+  }
+
+  .badge-img span,
+  .badge-img-fixed {
+    padding: 0.1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+    max-width: 1310px;
+  }
+
+  .col-base {
+    max-width: 29.33%;
+  }
+
+  .col-content {
+    max-width: 41.34%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  .col-12 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .row {
+    padding: 0;
+  }
+
+  .top-date {
+    display: none;
+  }
+
+  .nav {
+    padding-bottom: 0;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .brand > svg {
+    width: 8em;
+    height: 3em;
+  }
+
+  .footer-social {
+    justify-content: flex-start !important;
+    margin-top: 0.5em;
+  }
+
+  .social li {
+    padding-right: 0.5em;
+  }
+
+  .footer-brand-container {
+    display: block;
+  }
+
+  .order-xs-first {
+    order: -1;
+  }
+
+  .tiny-cards h5 {
+    font-size: 12pt !important;
+    margin-top: 0.3em;
+    margin-bottom: 1em !important;
+  }
+
+  .leaf {
+    border: none;
+  }
+
+  .countries {
+    flex-wrap: nowrap !important;
+  }
+
+  .menu {
+    justify-content: flex-start !important;
+  }
+
+  .newletter {
+    justify-content: center;
+  }
+
+  .newletter p {
+    text-align: center;
+  }
+
+  .xs-center {
+    text-align: center;
+    justify-content: center !important;
+  }
+
+  .subscribe,
+  .newletter {
+    height: 100%;
+  }
+
+  .xs-top {
+    margin-top: -26%;
+  }
+}
