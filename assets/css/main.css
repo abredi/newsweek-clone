@@ -45,6 +45,8 @@ body a {
 .card-img-top {
   min-height: 10em;
   background-color: #000;
+  object-fit: cover;
+  object-position: center;
 }
 
 .badge-img,
@@ -267,11 +269,15 @@ body a {
 
 .sponsored .card-img-top {
   min-height: 14em;
+  object-fit: cover;
+  object-position: center;
 }
 
 .tiny-cards .card-img-top {
   width: 100%;
   min-height: 5.8em;
+  object-fit: cover;
+  object-position: center;
 }
 
 .icon-nw {
@@ -403,11 +409,15 @@ body a {
 .magazine .card-img-top {
   height: 18.125em;
   width: 27.158em;
+  object-fit: cover;
+  object-position: center;
 }
 
 .magazine .cover-img {
   height: 24.185em;
   width: 18.125em;
+  object-fit: cover;
+  object-position: center;
 }
 
 .side-list .card-img {
@@ -488,6 +498,8 @@ ul.social li {
   .magazine .card-img-top {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .magazine .cover-img {
